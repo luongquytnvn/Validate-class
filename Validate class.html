@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Class</title>
+</head>
+<body>
+<script>
+    function isValidate(str) {
+        regexp = /^[CAP]{1}[0-9]{4}[GHIKLM]{1}$/
+        return regexp.test(str);
+    }
+    let a = 'C0318G';
+    console.log(isValidate(a));
+    let b = 'M0318G';
+    console.log(isValidate(b));
+    let c = 'P0323A';
+    console.log(isValidate(c));
+</script>
+</body>
+</html>
